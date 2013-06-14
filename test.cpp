@@ -12,7 +12,6 @@ double* b2fft(double x0[],double x1[])
 	int len;
 	cout<<"intput len(l<=10) = "<<endl;
 	cin>>len;
-	/*求逆序列*/
 	int M = int(pow((double)Two,len));
 	for(int j=1; j<M; j++)
 	{
@@ -35,7 +34,7 @@ double* b2fft(double x0[],double x1[])
 			x1[i] = temp;
 		}
 	}
-	/*碟式运算处理x0,x1*/
+
 	int r,m1,m2,m3,m4,k1,k2;
 	double u,v;
 	int N = pow((double)Two,len);
