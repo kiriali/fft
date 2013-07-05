@@ -10,7 +10,7 @@ double* b2fft(double x0[],double x1[])
 	int X_len = (sizeof(x0)>sizeof(x1))?(sizeof(x1)):(sizeof(x0));
 	double *X = new double[X_len];
 	int len;
-	cout<<"intput len(l<=10) = "<<endl;
+	cout<<"intput len = "<<endl;
 	cin>>len;
 	int M = int(pow((double)Two,len));
 	for(int j=1; j<M; j++)
